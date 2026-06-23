@@ -1,49 +1,53 @@
-{
-  "name": "tx-reflector",
-  "version": "0.4.0",
-  "description": "TypeScript transformer for code generation.",
-  "keywords": [
-    "typescript",
-    "reflect",
-    "transformer",
-    "react",
-    "interface"
-  ],
-  "main": "index.js",
-  "repository": "git@github.com:artifact-project/tx-reflector.git",
-  "scripts": {
-    "test": "jest --coverage",
-    "ts-build": "tsc",
-    "git-clean": "git clean -f",
-    "prepublish": "npm run test && npm run ts-build",
-    "postpublish": "npm run git-clean"
-  },
-  "files": [
-    "*.js",
-    "*.d.ts",
-    "src/*/*.js",
-    "src/*/*.d.ts"
-  ],
-  "author": "RubaXa <ibnRubaXa@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/jest": "^19.2.3",
-    "@types/node": "^8.0.1",
-    "jest": "^20.0.3",
-    "ts-jest": "^20.0.4",
-    "typescript": "^2.4.0"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testRegex": "\\.tests\\.tsx?$",
-    "setupTestFrameworkScriptFile": "<rootDir>/__jest__/extensions.ts",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "json"
-    ]
-  }
+﻿{
+    "name":  "tx-reflector",
+    "version":  "0.4.0",
+    "description":  "TypeScript transformer for code generation.",
+    "keywords":  [
+                     "typescript",
+                     "reflect",
+                     "transformer",
+                     "react",
+                     "interface"
+                 ],
+    "main":  "index.js",
+    "repository":  "git@github.com:artifact-project/tx-reflector.git",
+    "scripts":  {
+                    "test":  "jest --coverage",
+                    "ts-build":  "tsc",
+                    "git-clean":  "git clean -f",
+                    "prepublish":  "npm run test \u0026\u0026 npm run ts-build",
+                    "postpublish":  "npm run git-clean"
+                },
+    "files":  [
+                  "*.js",
+                  "*.d.ts",
+                  "src/*/*.js",
+                  "src/*/*.d.ts"
+              ],
+    "author":  "RubaXa \u003cibnRubaXa@gmail.com\u003e",
+    "license":  "MIT",
+    "devDependencies":  {
+                            "@types/jest":  "^19.2.3",
+                            "@types/node":  "^8.0.1",
+                            "jest":  "^20.0.3",
+                            "ts-jest":  "^20.0.4",
+                            "typescript":  "^2.4.0"
+                        },
+    "jest":  {
+                 "transform":  {
+                                   "^.+\\.tsx?$":  "\u003crootDir\u003e/node_modules/ts-jest/preprocessor.js"
+                               },
+                 "testRegex":  "\\.tests\\.tsx?$",
+                 "setupTestFrameworkScriptFile":  "\u003crootDir\u003e/__jest__/extensions.ts",
+                 "moduleFileExtensions":  [
+                                              "ts",
+                                              "tsx",
+                                              "js",
+                                              "json"
+                                          ]
+             },
+    "homepage":  "https://github.com/artifact-project/tx-reflector",
+    "bugs":  {
+                 "url":  "https://github.com/artifact-project/tx-reflector/issues"
+             }
 }
